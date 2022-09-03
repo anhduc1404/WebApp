@@ -1,0 +1,16 @@
+@font-face {
+	font-family:'SFPRODISPro-Medium';
+    src:url('./../fonts/SFPRODISPLAYMEDIUM.OTF');
+    font-weight: 500;
+};
+@font-face {
+	font-family:'SFPRODISPro-Regular';
+    src:url('./../fonts/SFPRODISPLAYREGULAR.OTF');
+    font-weight: 400;
+}
+.f-sf-m {
+	font-family: 'SFPRODISPro-Medium';
+}
+.f-sf-r {
+	font-family: 'SFPRODISPro-Regular';
+}

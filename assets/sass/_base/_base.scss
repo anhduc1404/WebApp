@@ -1,0 +1,35 @@
+.wrap {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.d_flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding:0;
+	color: #3e3e3e;
+	font-family: 'SFPRODISPro-Medium';
+	font-size: 14px;
+}
+input,textarea {
+	outline: none;
+	background: none;
+	border: 1px solid #ebebeb;
+}
+a {
+	text-decoration: none;
+	color: #3e3e3e;
+}
+.container {
+	width: 1200px;
+	margin: auto;
+	padding: 0;
+}
