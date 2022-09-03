@@ -1,0 +1,109 @@
+//Danh mục quản lý nhiệm 
+.task-manage {
+	margin-top: 20px;
+	&__title {
+		h1 {
+			font-size: 20px;
+		}
+	}
+	&__action {
+		margin-top: 12px;
+		margin-bottom: 10px;
+		a {
+			padding: 12px 30px;
+			background: linear-gradient(#7e4dfe, #5d6ee9);
+			color: #fff;
+			text-align: center;
+			border-radius: 15px;
+		}
+	}
+}
+//Trang them moi
+.page-content {
+	margin-top: 20px;
+	&__form {
+		background: #fff;
+		border-radius: 20px;
+		padding: 20px;
+		&-title {
+			.title-name {
+				width: calc(100% - 130px);
+				font-size: 20px;
+			}
+			.title-time {
+				width: 120px;
+				float: right;
+				position: relative;
+				top: 8px;
+				&__icon {
+					width: 20px;
+					float: left;
+				}
+				&__text {
+					width: 100px;
+					float: left;
+					padding-left: 5px;
+					color: #128be2;
+				}
+			}
+		}
+		&-content {
+
+		}
+		.history-member {
+			margin-top: 20px;
+			&__title {
+				.icon {
+					width: 25px;
+					float: left;
+				}
+				.text {
+					width: calc(100% - 25px);
+					float: left;
+					padding-left: 5px;
+				}
+			}
+			&__content {
+				margin-top: 12px;
+				background: #f6f6f9;
+				padding: 20px 20px;
+				border-radius: 10px;
+				ul {
+					padding-left: 25px;
+					position: relative;
+					&:before {
+						content: "";
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+						width: 1px;
+						height: 98%;
+						background: #eee8e8;
+					}
+					li {
+						margin-bottom: 20px;
+						position: relative;
+						.li-title {
+						}
+						.li-date {
+							color: #c2b8b8;
+							font-size: 14px;
+							margin-top: 3px;
+						}
+						&:before {
+							content: "";
+							width: 10px;
+							height: 10px;
+							border-radius: 50%;
+							background: #7656f5;
+							left: -30px;
+							top: 5px;
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+}
