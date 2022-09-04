@@ -154,10 +154,21 @@
 			.p-table-m {
 				margin-top: 20px;
 				&__title {
+					position: relative;
 					p {
 						font-size: 16px;
 						text-transform: uppercase;
 						margin-bottom: 0;
+					}
+					.filter-content {
+						position: absolute;
+						top: -2px;
+						right: 0;
+						z-index: 999;
+						cursor: pointer;
+						.icon {
+							width: 25px;
+						}
 					}
 				}
 				&__content {
@@ -165,6 +176,7 @@
 					background: #f0efff;
 					padding: 10px;
 					border-radius: 16px;
+					margin-top: 20px;
 					table {
 						width: 100%;
 						overflow: auto;
@@ -334,5 +346,57 @@
 				}
 			}
 		}
+	}
+}
+.popup {
+	width: calc(100% - 30px);
+	max-width: calc(100% - 10px);
+    display: none;
+    opacity: 0;
+	&-close {
+
+	}
+	&-content {
+		width: 100%;
+		background: #ffffff;
+        border-radius: 3px;
+        position: relative;
+        z-index: 10002;
+        max-height: calc(100vh - 60px);
+        overflow: auto;
+        padding: 20px;
+        .head-popup {
+        	font-size: 20px;
+        }
+        .body-popup {
+        	.form-group {
+        		position: relative;
+        		select,input {
+        			color: #aaaeb1;
+        		}
+        		.icon-date {
+        			position: absolute;
+        			bottom: 10px;
+        			right: 10px;
+        			width: 20px;
+        			overflow: hidden;
+        		}
+        		.btn-submit,.btn-filter {
+        			text-align: center;
+        			width: 100%;
+        			padding: 10px 30px;
+        			color: #fff;
+        			background: linear-gradient(#7e4dfe, #5d6ee9);
+        			border-radius: 10px;
+        			overflow: hidden;
+        			text-decoration: none;
+        			transition: all 0.3s;
+        			&:hover {
+        				background: linear-gradient(#5d6ee9, #7e4dfe);
+        			}
+        		}
+
+        	}
+        }
 	}
 }
