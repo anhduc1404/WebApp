@@ -1,0 +1,39 @@
+@media only screen and (min-width:0px) and (max-width:991px) {
+	//Danh muc - Danh sach
+	.add-task {
+		margin-top: 20px;
+		&__btn {
+			background: linear-gradient(#7e4dfe, #5d6ee9);
+			padding: 10px 30px;
+			color: #fff;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: all 0.3s;
+			text-decoration: none;
+			&:hover {
+				background: linear-gradient(#5d6ee9,#7e4dfe);
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+	//Them moi
+	.page-content {
+		&__form {
+			padding: unset;
+			&-content {
+				.form-group {
+					&.row {
+						.p-right-5 {
+							padding-right: 0!important;
+						}
+						.p-left-5 {
+							padding-left: 0!important;
+							margin-top: 15px;
+						} 
+					}
+				}
+			}
+		}
+	}
+}
