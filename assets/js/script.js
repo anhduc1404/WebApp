@@ -42,4 +42,7 @@ jQuery(document).ready(function ($) {
     }
 })
 openPopup('.filter-content','#filter-content');
-closePopup('.popup-close','#filter-content');
+$('.popup-close').on('click' ,function() {
+    $('#filter-content').css('visibility', 'hidden');
+    $('#filter-content').bPopup().close();
+});

@@ -85,7 +85,7 @@
     	width: 12px;
     	position: absolute;
     	bottom: 10px;
-    	right: 10px;
+    	right: 16px;
     }
 }
 .p-left-5 {
@@ -99,5 +99,64 @@
 	overflow: hidden;
 	p {
 		margin-bottom: unset;
+	}
+}
+.filter-content {
+	cursor: pointer;
+}
+.popup {
+	width: 414px;
+	max-width: calc(100% - 30px);
+    display: none;
+    position: relative;
+	&-close {
+		position: absolute;
+		top: 25px;
+		right: 21px;
+		z-index: 99999;
+		cursor: pointer;
+	}
+	&-content {
+		width: 100%;
+		background: #ffffff;
+        border-radius: 3px;
+        position: relative;
+        z-index: 10002;
+        max-height: calc(100vh - 60px);
+        overflow: auto;
+        padding: 20px;
+        .head-popup {
+        	font-size: 20px;
+        }
+        .body-popup {
+        	.form-group {
+        		position: relative;
+        		select,input {
+        			color: #aaaeb1;
+        		}
+        		.icon-date {
+        			position: absolute;
+        			bottom: 12px;
+        			right: 16px;
+        			width: 15px;
+        			overflow: hidden;
+        		}
+        		.btn-submit,.btn-filter {
+        			text-align: center;
+        			width: 100%;
+        			padding: 10px 30px;
+        			color: #fff;
+        			background: linear-gradient(#7e4dfe, #5d6ee9);
+        			border-radius: 10px;
+        			overflow: hidden;
+        			text-decoration: none;
+        			transition: all 0.3s;
+        			&:hover {
+        				background: linear-gradient(#5d6ee9, #7e4dfe);
+        			}
+        		}
+
+        	}
+        }
 	}
 }
