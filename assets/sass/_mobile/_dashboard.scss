@@ -348,14 +348,29 @@
 		}
 	}
 }
-@media only screen and (min-width:550px) and (max-width: 991px) {
+@media only screen and (min-width:800px) and (max-width: 991px) {
 	.content-page-m {
 		&__content {
 			.tab-member-m {
 				&__content {
 				    &-list {
 			    		.item-tab-member-m {
-			    			width: 25%!important;
+			    			width: 18%!important;
+			    		}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:550px) and (max-width: 799px) {
+	.content-page-m {
+		&__content {
+			.tab-member-m {
+				&__content {
+				    &-list {
+			    		.item-tab-member-m {
+			    			width: 20%!important;
 			    		}
 					}
 				}
