@@ -138,13 +138,13 @@ li {
 .scrollbar-package::-webkit-scrollbar
 {
     width: 6px;
-    height: 5px;
+    height: 0px;
     background-color: rgba(0,0,0,.1);
 }
 .scrollbar-package::-webkit-scrollbar-thumb
 {
     background-color: $color_main;
-    height: 5px;
+    height: 0px;
     border-radius: 5px;
     overflow: hidden;
 }
