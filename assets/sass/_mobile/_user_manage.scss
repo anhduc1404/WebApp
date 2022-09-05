@@ -1,0 +1,80 @@
+@media only screen and (min-width:0px) and (max-width: 991px) {
+	.page-user {
+		.form-user {
+			&__tab {
+				ul {
+					li {
+						width: calc(100%/3);
+						float: left;
+						font-size: 16px;
+						padding: 15px 1px;
+						text-align: center;
+					}
+				}
+			}
+			.form-user-information {
+
+			}
+			&__content {
+				.avatar {
+					width: 100%;
+				}
+				.form-input {
+					width: 100%;
+					margin-left: unset;
+					margin-top: 15px;
+					.form-group {
+						.p-right-5 {
+							padding-right: 0!important;
+						}
+						.p-left-5 {
+							padding-left: 0!important;
+							margin-top: 15px;
+						}
+					}
+				}
+			}
+			.form-user-changepass {
+				.change-pass {
+					width: 100%;
+				}
+			}
+			.form-user-task {
+				.list-task {
+					&__table {
+						overflow-x: auto;
+						table {
+							overflow-x: auto;
+							tbody {
+								tr {
+									td {
+										.name,.from-package,.to-package {
+											width: 100px;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.paginate-page li {
+		width: 35px;
+		height: 33px;
+	}
+}
+@media only screen and (min-width:0px) and (max-width: 399px) {
+	.page-user {
+		.form-user {
+			&__tab {
+				ul {
+					li {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+}

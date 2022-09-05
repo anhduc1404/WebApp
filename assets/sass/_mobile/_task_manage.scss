@@ -17,7 +17,88 @@
 			}
 		}
 	}
-	
+	.page-content {
+		&__form {
+			&-title {
+				.title-status {
+					position: relative;
+					top: 5px;
+					&__icon {
+						margin-right: 3px;
+						width: 20px;
+						position: relative;
+			    		top: 2px;
+					}
+					&__text {
+						color: #e3543e;
+			    		position: relative;
+			    		top: 2px;
+					}
+				}
+			}
+			&-content {
+				.avatar {
+					&-title {
+						p {
+							margin-bottom: unset;
+							color: #aaa;
+						}
+					}
+					&-content {
+						border: 1px solid #ebebeb;
+						border-radius: 10px;
+						overflow: hidden;
+						padding: 20px;
+						margin-top: 8px;
+						.avatar-preview {
+							width: 150px;
+						    margin: 0 auto;
+						    img {
+						    	width: 100%;
+						    	height: 100%;
+						    }
+						}
+						.avatar-action {
+							margin-top: 5px;
+							&__add {
+								border: 1px solid #ebebeb;
+								width: 150px;
+								margin: 0 auto;
+								display: flex;
+								flex-wrap: wrap;
+								border-radius: 8px;
+								overflow: hidden;
+								.choose-file {
+									background: #efeff2;
+									width: 50%;
+									float: left;
+									padding: 8px 0;
+									text-align: center;
+									border-right: 1px solid #ebebeb;
+									cursor: pointer;
+									position: relative;
+									input {
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										opacity: 0;
+										cursor: pointer;
+									}
+								}
+								.name-file {
+									width: 50%;
+									float: left;
+									background: #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media only screen and (min-width:0px) and (max-width: 450px) {
 	//Them moi
@@ -25,6 +106,65 @@
 		&__form {
 			padding: unset;
 			&-content {
+				.avatar {
+					&-title {
+						p {
+							margin-bottom: unset;
+							color: #aaa;
+						}
+					}
+					&-content {
+						border: 1px solid #ebebeb;
+						border-radius: 10px;
+						overflow: hidden;
+						padding: 20px;
+						margin-top: 8px;
+						.avatar-preview {
+							width: 150px;
+						    margin: 0 auto;
+						    img {
+						    	width: 100%;
+						    	height: 100%;
+						    }
+						}
+						.avatar-action {
+							margin-top: 5px;
+							&__add {
+								border: 1px solid #ebebeb;
+								width: 150px;
+								margin: 0 auto;
+								display: flex;
+								flex-wrap: wrap;
+								border-radius: 8px;
+								overflow: hidden;
+								.choose-file {
+									background: #efeff2;
+									width: 50%;
+									float: left;
+									padding: 8px 0;
+									text-align: center;
+									border-right: 1px solid #ebebeb;
+									cursor: pointer;
+									position: relative;
+									input {
+										width: 100%;
+										height: 100%;
+										position: absolute;
+										top: 0;
+										left: 0;
+										opacity: 0;
+										cursor: pointer;
+									}
+								}
+								.name-file {
+									width: 50%;
+									float: left;
+									background: #fff;
+								}
+							}
+						}
+					}
+				}
 				.form-group {
 					&.row {
 						.p-right-5 {
