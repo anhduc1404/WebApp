@@ -748,6 +748,11 @@
 									td {
 										padding: 3px;
 									}
+									&:hover {
+										td {
+											background: #f0efff;
+										}
+									}
 								}
 								&:hover {
 									td {
