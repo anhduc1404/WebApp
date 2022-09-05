@@ -3,7 +3,7 @@
 	.add-task {
 		margin-top: 20px;
 		&__btn {
-			background: linear-gradient(#7e4dfe, #5d6ee9);
+			background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 			padding: 10px 30px;
 			color: #fff;
 			border-radius: 10px;
@@ -11,7 +11,7 @@
 			transition: all 0.3s;
 			text-decoration: none;
 			&:hover {
-				background: linear-gradient(#5d6ee9,#7e4dfe);
+				background: linear-gradient(to right,#5d6ee9,#7e4dfe);
 				text-decoration: none;
 				color: #fff;
 			}

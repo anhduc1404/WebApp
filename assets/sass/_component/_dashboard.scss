@@ -289,7 +289,7 @@
 							margin-top: 50px;
 							a {
 								padding: 15px 29px;
-								background: linear-gradient(#7e4dfe, #5d6ee9);
+								background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 								color: #d3daf8; 
 								border-radius: 20px;
 								overflow: hidden;
@@ -431,7 +431,7 @@
 									}
 									.register {
 										width: 120px;
-										background: linear-gradient(#7e4dfe, #5d6ee9);
+										background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 										color: #fff;
 										text-align: center;
 										border-radius: 10px;
@@ -442,7 +442,7 @@
 									}
 									.registered {
 										width: 130px;
-										background: linear-gradient(#f69229, #f08c88);
+										background: linear-gradient(to right, #f69229, #f08c88);
 										color: #fff;
 										text-align: center;
 										border-radius: 10px;
@@ -501,13 +501,13 @@
 								transition: all 0.3s;
 							}
 							&.active {
-								background: linear-gradient(#7e4dfe, #5d6ee9);
+								background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 								a {
 									color: #fff;
 								}
 							}
 							&:hover {
-								background: linear-gradient(#7e4dfe, #5d6ee9);
+								background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 								a {
 									color: #fff;
 								}
