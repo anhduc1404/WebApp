@@ -243,7 +243,15 @@
 									<!-- Tab task complate -->
 									<div class="wrap d_flex item-tab-user form-user-task tab-task">
 										<div class="wrap list-task">
-											<div class="wrap list-task__table">
+											<div class="wrap list-task__title">
+												<h4 class="name f-sf-r">Nhiệm vụ đã làm: <span class="f-sf-b">2.500</span></h4>
+												<div class="icon-view filter-content">
+													<div class="icon-view__img">
+														<img src="./assets/img/icon/ICON-14.svg">
+													</div>
+												</div>
+											</div>
+											<div class="wrap list-task__table box-shadow">
 												<table>
 													<thead>
 														<tr>
@@ -423,9 +431,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="wrap d_flex task-user">
-									
 								</div>
 							</div>
 							<!-- page content -->
@@ -697,6 +702,43 @@
 			</div>
 		</section>
 
+		<!-- Popup filter -->
+		<div class="popup filter-content-popup" id="filter-content">
+			<div class="popup-close">
+				<img src="./assets/img/icon/ICON_clost.svg">
+			</div>
+			<div class="popup-content">
+				<div class="wrap head-popup">
+					<p>Lọc tìm kiếm</p>
+				</div>
+				<div class="wrap body-popup">
+					<div class="wrap form-group input-select">
+						<label>Theo gói đăng kí</label>
+						<select class="form-select f-sf-r" aria-label="select">
+							<option selected>Chọn gói</option>
+						</select>
+						<div class="icon-down"><img src="./assets/img/icon/down-arrow.svg"></div>
+					</div>
+					<div class="wrap form-group input-date">
+						<label>Từ ngày</label>
+						<input type="date" name="" class="form-control datepicker" />
+						<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
+					</div>
+					<div class="wrap form-group input-date">
+						<label>Tới ngày</label>
+						<input type="date" name="" class="form-control datepicker" />
+						<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
+					</div>
+					<div class="wrap form-group">
+						<div class="btn-submit">
+							<a href="javascript:;" class="btn-filter">Tìm kiếm</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End popup filter -->
+
 		<!-- Popup menu mobile -->
 		<div class="nav-menu-m">
 			<div class="wrap nav-menu-m__content">
@@ -767,6 +809,7 @@
 		<!-- script -->
 		<script src="./assets/libs/jquery.min.js"></script>
 		<script src="./assets/libs/bootstrap.min.js"></script>
+		<script src="./assets/libs/jquery.bpopup.min.js"></script>
 		<script src="./assets/libs/jquery.datetimepicker.full.min.js"></script>
 		<script src="./assets/js/script.js"></script>
 	</body>

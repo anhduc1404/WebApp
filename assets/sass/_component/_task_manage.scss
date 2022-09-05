@@ -33,9 +33,20 @@
 			}
 			.title-status {
 				width: calc(100% - 200px - 120px);
-			    font-size: 20px;
-			    color: #e3543e;
 			    padding-left: 20px;
+			    display: flex;
+			    .icon {
+			    	margin-right: 3px;
+			    	width: 22px;
+			    	position: relative;
+			    	top: 5px;
+			    }
+			    .text {
+			    	font-size: 18px;
+			    	color: #e3543e;
+			    	position: relative;
+			    	top: 2px;
+			    }
 			}
 			.title-time {
 				width: 120px;
@@ -72,7 +83,7 @@
 						padding: 20px;
 						margin-top: 8px;
 						.avatar-preview {
-							width: 60%;
+							width: 150px;
 						    margin: 0 auto;
 						    img {
 						    	width: 100%;

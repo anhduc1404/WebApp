@@ -160,16 +160,6 @@
 						text-transform: uppercase;
 						margin-bottom: 0;
 					}
-					.filter-content {
-						position: absolute;
-						top: -2px;
-						right: 0;
-						z-index: 999;
-						cursor: pointer;
-						.icon {
-							width: 25px;
-						}
-					}
 				}
 				&__content {
 					overflow-x: auto;
@@ -243,6 +233,28 @@
 										overflow: hidden;
 										margin: auto;
 										margin-right: 0;									
+									}
+									.date {
+										width: 95px;
+										.icon {
+											float: left;
+											position: relative;
+											top: 3px;
+										}
+										.text {
+											float: left;
+										}
+									}
+									.operation {
+										width: 100px;
+										display: flex;
+										.edit,.delete {
+											width: 30px;
+											float: left;
+										}
+										.delete {
+											margin-left: 2px;
+										}
 									}
 								}
 								&.bg-white {
@@ -326,9 +338,10 @@
 			.item-footer-m {
 				width: calc(100%/3);
 				float: left;
-				height: 80px;
+				height: 56px;
 				&__img {
-					height: 45px;
+					height: 25px;
+					margin-top: 5px;
 					.img {
 						width: 25px;
 						height: 100%;
@@ -344,6 +357,9 @@
 					height: calc(100% - 45px);
 					text-align: center;
 					color: #fff;
+					p {
+						margin-bottom: unset;
+					}
 				}
 				&.active {
 					position: relative;

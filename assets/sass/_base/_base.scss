@@ -102,6 +102,16 @@ li {
 		}
 	}
 }
+.filter-content {
+	position: absolute;
+	top: -2px;
+	right: 0;
+	z-index: 999;
+	cursor: pointer;
+	.icon {
+		width: 25px;
+	}
+}
 @media only screen and (min-width:1921px){
 	.containers {
 		max-width: 1820px;
