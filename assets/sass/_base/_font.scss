@@ -6,11 +6,19 @@
 @font-face {
 	font-family:'SFPRODISPro-Regular';
     src:url('./../fonts/SFPRODISPLAYREGULAR.OTF');
-    font-weight: 400;
+    font-weight: 300;
+}
+@font-face {
+	font-family:'SFPRODISPro-Bold';
+    src:url('./../fonts/SFPRODISPLAYBOLD.OTF');
+    font-weight: 600;
 }
 .f-sf-m {
 	font-family: 'SFPRODISPro-Medium';
 }
 .f-sf-r {
 	font-family: 'SFPRODISPro-Regular';
+}
+.f-sf-b {
+	font-family: 'SFPRODISPro-Bold';
 }
