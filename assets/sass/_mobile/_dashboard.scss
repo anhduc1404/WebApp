@@ -285,7 +285,7 @@
 								}
 								&.none {
 									td {
-										padding: 3px;
+										padding: 4px;
 									}
 								}
 							}
@@ -299,7 +299,8 @@
 					top: 45px;
 					right: -20px;
 					padding: 0 10px;
-					padding-bottom: 32px;
+					padding-bottom: 15px;
+					padding-top: 3px;
 					table {
 						thead {
 							tr {
@@ -316,13 +317,20 @@
 							tr {
 								&.active {
 									td {
-										height: 35px;
-										padding-top: 17px;
+										height: 60px;
+										position: relative;
+										.icon {
+											width: 30px;
+											position: absolute;
+											top: 50%;
+											left: 50%;
+											transform: translate(-50%,-50%);
+										}
 									}
 								}
 								&.none {
 									td {
-										height: 20px;
+										padding: 4px;
 									}
 								}
 							}
