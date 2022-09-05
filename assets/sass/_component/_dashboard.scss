@@ -212,6 +212,14 @@
 										.text {
 											display: none;
 										}
+										.icon {
+											img {
+												transition: all 0.3s;
+											}
+											&:hover {
+												transform: scale(1.1);
+											}
+										}
 									}
 									&.active {
 										.nav-link {
@@ -370,6 +378,11 @@
 								border-radius: 20px;
 								overflow: hidden;
 								text-decoration: none;
+								transform: all 0.3s;
+								&:hover {
+									color: #fff;
+									background: linear-gradient(to right,#5d6ee9,#7e4dfe);
+								}
 							}
 						}
 					}

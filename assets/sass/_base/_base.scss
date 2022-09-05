@@ -32,7 +32,6 @@ a {
 }
 .containers {
 	width: calc(100% - 80px);
-	max-width: 100%;
 	margin: auto;
 	padding: 0;
 }
@@ -61,4 +60,14 @@ li {
 }
 .xdsoft_datetimepicker {
 	z-index: 999999;
+}
+@media only screen and (min-width:1921px){
+	.containers {
+		max-width: 1820px;
+	}
+}
+@media only screen and (min-width:0px) and (max-width:1920px) {
+	.containers {
+		max-width: 100%;
+	}
 }

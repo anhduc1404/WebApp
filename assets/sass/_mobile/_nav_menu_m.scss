@@ -1,0 +1,210 @@
+.nav-menu-m {
+	width: 0%;
+	height: 100vh;
+	overflow-y: auto;
+	position: fixed;
+	background: rgba(0,0,0,0.3);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+	display: flex;
+	flex-wrap: wrap;
+	&.active {
+		width: 100%;
+		opacity: 1;
+		visibility: visible;
+		display: block;
+	}
+	&__content {
+		background: $color_main;
+		width: 70%;
+		height: 100%;
+		padding: 10px 0 10px 10px;
+		float: left;
+		.menu-m-head {
+			position: relative;
+			&__main {
+				text-align: center;
+				p {
+					color: #fff;
+					text-transform: uppercase;
+					font-size: 20px;
+					padding: 0;
+					margin-bottom: 0;
+					font-weight: 600;
+				}
+			}
+			&__sub {
+				ul {
+					justify-content: center;
+					li {
+						display: inline-block;
+						margin-left: 10px;
+						position: relative;
+						text-transform: uppercase;
+						font-size: 10px;
+						a {
+							color: #d3daf8;
+							transition: all 0.3s;
+							text-decoration: none;
+							&:hover {
+								color: #fff;
+							}
+						}
+						&:after {
+							content: "";
+							width: 1px;
+							height: 56%;
+							position: absolute;
+							top: 50%;
+							transform: translateY(-50%);
+							right: -5px;
+							background: #fff;
+						}
+						&:first-child {
+							margin-left: unset;
+						}
+						&:last-child {
+							&:after {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.menu-m-body {
+			.menu_section {
+				padding: 20px 0 20px 20px;
+				.side-menu {
+					li {
+						margin-bottom: 6px;
+						position: relative;
+						padding: 16px 0 16px 16px;
+						transition: all 0.3s;
+						border-radius: 16px 0 0 16px;
+						.icon {
+							width: 30px;
+							float: left;
+							&-main {
+								display: block; 
+							}
+							&-hover {
+								display: none;
+								transition: all 0.3s;
+							}
+						}
+						.text {
+							width: calc(100% - 30px);
+							float: right;
+							color: #d3daf8;
+							padding-left: 10px;
+							position: relative;
+							top: 2px;
+							padding-right: 16px;
+							line-height: 20px;
+							transition: all 0.3s;
+						}
+						&.active {
+							background: #f6f6f9;
+							.nav-link {
+								position: relative;
+								.shape1,.shape2 {
+									background: #f6f6f9;
+								}
+								.shape1 {
+								    position: absolute;
+								    top: -45px;
+								    width: 25px;
+								    height: 60px;
+								    right: 0px;
+								}
+								.shape2 {
+								    position: absolute;
+								    top: 35px;
+								    width: 25px;
+								    height: 30px;
+								    right: 0px;
+								}
+								.text {
+									color: #3e3e3e;
+									
+								}
+								.icon {
+									&-main {
+										display: none;
+									}
+									&-hover {
+										display: block;
+									}
+								}
+								&:before,&:after {
+									border-right: 20px solid var(--dark-theme);
+								}
+								&:before {
+								    content: "";
+								    position: absolute;
+								    top: -46px;
+								    width: 30px;
+								    z-index: 9;
+								    right: -1px;
+								    bottom: 0;
+								    height: 30px;
+								    border-top-color: transparent;
+								    border-left-color: transparent;
+								    border-bottom: transparent;
+								    border-radius: 0px 0px 48px 0px;
+								    background: $color_main;
+								}
+								&::after {
+								    content: "";
+								    position: absolute;
+								    top: 37px;
+								    width: 30px;
+								    z-index: 0;
+								    right: 0px;
+								    bottom: 0;
+								    height: 30px;
+								    border-top-color: transparent;
+								    border-left-color: transparent;
+								    border-bottom: transparent;
+								    border-radius: 0px 48px 0px 0px;
+								    background: $color_main;
+								}
+							}
+						}
+						&:hover {
+							.text {
+								color: #fff;
+								padding-left: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&__close {
+		width: 30%;
+		height: 100%;
+		float: right;
+		position: relative;
+	}
+	.close-menu-m {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		z-index: 99999;
+		.icon {
+			width: 25px;
+		    height: 25px;
+		    background: #fff;
+		    border-radius: 50%;
+		    padding: 5px;
+		}
+	}
+}

@@ -59,3 +59,10 @@ $('body').on('click','*[data-toggle_sitebar]',function(e){
         $(this).attr('data-toggle_sitebar',0);
     }
 });
+//Show - hidden menu mobile
+$('body').on('click','*[data-menu_m]',function(e){
+    $('.nav-menu-m').addClass('active');
+});
+$('body').on('click','*[data-close_menu_m]',function(e){
+    $('.nav-menu-m').removeClass('active');
+});
