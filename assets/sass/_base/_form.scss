@@ -35,6 +35,10 @@
     input,select {
         height: 45px;
         border-radius: 7px;
+        font-family: 'SFPRODISPro-Regular';
+        &::placeholder {
+            color: #aaa;
+        }
     }
 	textarea {
 		height: 100px;
