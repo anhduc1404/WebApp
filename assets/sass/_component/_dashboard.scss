@@ -9,6 +9,7 @@
 		overflow: hidden;
 		position: relative;
 		z-index: 1;
+		transition: all 0.3s;
 		.sitebar-menu {
 			.nav_title {
 				padding: 30px 10px;
@@ -21,6 +22,12 @@
 						padding: 0;
 						margin-bottom: 0;
 						font-weight: 600;
+					}
+					.short-title {
+						display: none;
+					}
+					.full-title {
+						display: block;
 					}
 				}
 				&-sub {
@@ -176,6 +183,71 @@
 				}
 			}
 		}
+		&.left-col-hidden {
+			width: 60px!important;
+			.sitebar-menu {
+				.nav_title {
+					&-main {
+						.short-title {
+							display: block;
+						}
+						.full-title {
+							display: none;
+						}
+					}
+					&-sub {
+						display: none;
+					}
+				}
+				.nav_menu {
+					width: 100%;
+					.main_menu_side {
+						.menu_section {
+							padding: 10px 5px;
+							.side-menu {
+								width: 100%;
+								li {
+									padding: 8px 0 8px 8px;
+									.nav-link {
+										.text {
+											display: none;
+										}
+									}
+									&.active {
+										.nav-link {
+											.shape1 {
+												top: -26px;
+												right: -5px;
+												width: 15px;
+												height: 40px;
+											}
+											.shape2 {
+											    top: 7px;
+											    right: -5px;
+											    width: 13px;
+											    height: 40px;
+											}
+											&:before {
+												top: -28px;
+												right: -5px;
+												height: 20px;
+												width: 15px;
+											}
+											&:after {
+												top: 29px;
+												right: -6px;
+												height: 20px;
+												width: 15px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.right-col {
 		width: calc(100% - 290px - 32px);
@@ -187,6 +259,10 @@
 		padding: 3px;
 		position: relative;
 		z-index: 5;
+		transition: all 0.3s;
+		&.right-col-full {
+			width: calc(100% - 60px - 32px)!important;
+		}
 		&__content {
 			.nav-top {
 				box-shadow: 2px 1px 5px 2px rgba(0,0,0,.2);

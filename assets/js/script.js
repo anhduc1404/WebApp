@@ -46,3 +46,16 @@ $('.popup-close').on('click' ,function() {
     $('#filter-content').css('visibility', 'hidden');
     $('#filter-content').bPopup().close();
 });
+//show - hidden sitebar left
+$('body').on('click','*[data-toggle_sitebar]',function(e){
+    var check = $(this).attr('data-toggle_sitebar');
+    if(check == 0) {
+        $('.left-col').addClass('left-col-hidden');
+        $('.right-col').addClass('right-col-full');
+        $(this).attr('data-toggle_sitebar',1);
+    }else {
+        $('.left-col').removeClass('left-col-hidden');
+        $('.right-col').removeClass('right-col-full');
+        $(this).attr('data-toggle_sitebar',0);
+    }
+});
