@@ -62,10 +62,10 @@
 	.content-page-m {
 		margin-bottom: 60px;
 		background: #fafcfe;
-		border-radius: 20px;
+		border-radius: 20px 20px 0;
 		position: relative;
 		top: -30px;
-		padding: 20px;
+		padding: 20px 20px 0 20px;
 		&__content {
 			width: 100%;
 			.tab-member-m {
@@ -153,6 +153,7 @@
 			}
 			.p-table-m {
 				margin-top: 20px;
+				position: relative;
 				&__title {
 					position: relative;
 					p {
@@ -167,6 +168,7 @@
 					padding: 10px;
 					border-radius: 16px;
 					margin-top: 20px;
+					position: relative;
 					table {
 						width: 100%;
 						overflow: auto;
@@ -174,10 +176,12 @@
 							tr {
 								th {
 									font-weight: 500;
-									padding: 5px 10px;
+									padding: 18px 10px;
+									text-transform: uppercase;
 									&.name,&.package {
+										width: 150px;
 										div {
-											width: 120px;
+											width: 150px;
 										}
 									}
 									&.status {
@@ -243,7 +247,14 @@
 										}
 										.text {
 											float: left;
+											color: #e3543e;
 										}
+									}
+									.phone {
+										width: 100px;
+									}
+									.icon-status {
+										width: 85px;
 									}
 									.operation {
 										width: 100px;
@@ -274,9 +285,58 @@
 								}
 								&.none {
 									td {
-										padding: 5px;
+										padding: 3px;
 									}
 								}
+							}
+						}
+					}
+				}
+				.action-fix {
+					width: 50px;
+					background: #fff;
+					position: absolute;
+					top: 45px;
+					right: -20px;
+					padding: 0 10px;
+					padding-bottom: 32px;
+					table {
+						thead {
+							tr {
+								th {
+									padding: 21px 10px;
+									p {
+										margin-bottom: unset;
+										opacity: 0;
+									}
+								}
+							}
+						}
+						tbody {
+							tr {
+								&.active {
+									td {
+										height: 35px;
+										padding-top: 17px;
+									}
+								}
+								&.none {
+									td {
+										height: 20px;
+									}
+								}
+							}
+						}
+					}
+					ul {
+						width: 100%;
+						li {
+							width: 100%;
+							&.active {
+								height: 60px;
+							}
+							&.none {
+								height: 2px;
 							}
 						}
 					}
@@ -338,9 +398,9 @@
 			.item-footer-m {
 				width: calc(100%/3);
 				float: left;
-				height: 56px;
+				height: 65px;
 				&__img {
-					height: 25px;
+					height: 33px;
 					margin-top: 5px;
 					.img {
 						width: 25px;
@@ -367,7 +427,7 @@
 						.img {
 							width: 60px;
 							position: absolute;
-							top: -29px;
+							top: -21px;
 							left: 50%;
 							transform: translateX(-50%);
 						}
