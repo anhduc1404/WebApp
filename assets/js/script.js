@@ -66,3 +66,36 @@ $('body').on('click','*[data-menu_m]',function(e){
 $('body').on('click','*[data-close_menu_m]',function(e){
     $('.nav-menu-m').removeClass('active');
 });
+//Hidden- show info user
+$('body').on('click','*[data-user]',function(e){
+    var check = $(this).attr('data-user');
+    if(check == 0) {
+        $(this).closest('.user').find('.user-action').addClass('active');
+        $(this).attr('data-user',1);
+    }else {
+        $(this).closest('.user').find('.user-action').removeClass('active');
+        $(this).attr('data-user',0);
+    }
+});
+//Hidden- show info notification
+$('body').on('click','*[data-notification_navbar]',function(e){
+    var check = $(this).attr('data-notification_navbar');
+    if(check == 0) {
+        $(this).closest('.notification').find('.notification-info').addClass('active');
+        $(this).attr('data-notification_navbar',1);
+    }else {
+        $(this).closest('.notification').find('.notification-info').removeClass('active');
+        $(this).attr('data-notification_navbar',0);
+    }
+});
+//Show - hidden form seach navbar
+$('body').on('click','*[data-search_navbar_show]',function(e){
+    var check = $(this).attr('data-search_navbar_show');
+    if(check == 0) {
+        $('*[data-search_navbar]').addClass('active');
+        $(this).attr('data-search_navbar_show',1);
+    }else {
+        $('*[data-search_navbar]').removeClass('active');
+        $(this).attr('data-search_navbar_show',0);
+    }
+});

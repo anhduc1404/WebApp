@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css?v=1">
 		<link rel="stylesheet" href="./assets/css/datetimepicker.min.css">
+		<link rel="stylesheet" href="./assets/libs/font-awesome.min.css">
 		<link rel="stylesheet" href="./assets/css/style.css?v=1">
 	</head>
 	<body>
@@ -89,15 +90,55 @@
 									</div>
 									<div class="navbar-nav">
 										<div class="wrap d_flex navbar-nav__content">
-											<div class="search">
-												<img src="./assets/img/icon/ICON_search.svg">
+											<div class="form-search-navbar" data-search_navbar>
+												<form action="" method="" class="wrap f-sf-r">
+													<input type="text" name="keyword" placeholder="Tìm kiếm.." autocomplete="off">
+													<button type="submit"><img src="./assets/img/icon/ICON_search.svg"></button>
+												</form>
 											</div>
-											<div class="notification">
-												<img src="./assets/img/icon/ICON_chuong.svg">
+											<div class="search circle" data-search_navbar_show="0">
+												<div class="icon">
+													<img src="./assets/img/icon/ICON_search.svg">
+												</div>
+											</div>
+											<div class="notification circle">
+												<div class="icon" data-notification_navbar="0">
+													<img src="./assets/img/icon/ICON_chuong.svg">
+												</div>
+												<div class="notification-number"><span>6</span></div>
+												<div class="notification-info">
+													<ul>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">5 giờ trước</p>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">20/08/2022</p>
+															</a>
+														</li>
+													</ul>
+													<div class="view-all">
+														<a href="#">Xem tất cả</a>
+													</div>
+												</div>
 											</div>
 											<div class="user">
-												<div class="user-avatar">
+												<div class="user-avatar" data-user="0">
 													<img src="./assets/img/icon/ICON-11.svg">
+												</div>
+												<div class="user-action">
+													<ul class="wrap">
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-user-o" aria-hidden="true"></i> <span>Hồ sơ</span></a>
+														</li>
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Đăng xuất</span></a>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
