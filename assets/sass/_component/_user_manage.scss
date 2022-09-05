@@ -209,6 +209,12 @@
 											object-fit: contain;
 										}
 									}
+
+								}
+								&.none {
+									td {
+										padding: 4px;
+									}
 								}
 							}
 						}
