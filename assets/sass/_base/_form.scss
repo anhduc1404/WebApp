@@ -27,11 +27,14 @@
 		}
 	}
 	label {
-
+        color: #aaa;
 	}
 	.col-md-6 {
 		padding: unset;
 	}
+    input,select {
+        height: 45px;
+    }
 	textarea {
 		height: 100px;
 		padding: 5px;
@@ -40,7 +43,7 @@
 	.save-form {
 		background: linear-gradient(#7e4dfe, #5d6ee9);
 		padding: 10px 35px;
-		border-radius: 15px;
+		border-radius: 8px;
 		overflow: hidden;
 		text-align: center;
 		color: #fff;
@@ -84,7 +87,7 @@
 	.icon-down {
     	width: 12px;
     	position: absolute;
-    	bottom: 10px;
+    	bottom: 14px;
     	right: 16px;
     }
 }

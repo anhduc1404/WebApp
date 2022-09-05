@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tài khoản</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css?v=1">
+		<link rel="stylesheet" href="./assets/css/datetimepicker.min.css">
+		<link rel="stylesheet" href="./assets/css/style.css?v=1">
+	</head>
+	<body>
+		<!-- Desktop -->
+		<section class="wrap d_flex site-content desktop">
+			<div class="containers">
+				<div class="wrap d_flex content-site">
+					<aside class="left-col">
+						<div class="wrap d_flex sitebar-menu">
+							<div class="wrap d_flex nav_title">
+								<div class="wrap nav_title-main">
+									<p class="short-title">W</p>
+									<p class="full-title">Womex</p>
+								</div>
+								<div class="wrap nav_title-sub">
+									<ul class="wrap d_flex">
+										<li>
+											<a href="#">Wordlwide</a>
+										</li>
+										<li>
+											<a href="#">Music</a>
+										</li>
+										<li>
+											<a href="#">Expro</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="wrap d_flex nav_menu">
+								<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+									<div class="menu_section">
+										<ul class="wrap nav side-menu">
+											<li class="wrap d_flex">
+												<a href="dashboard.html" class="nav-link wrap">
+													<div class="icon">
+														<img class="icon-main" src="./assets/img/icon/ICON_home-active.svg">
+														<img class="icon-hover" src="./assets/img/icon/ICON_home-01.svg">
+													</div>
+													<div class="text">Dashboard</div>
+													<span class="shape1"></span>
+													<span class="shape2"></span>
+												</a>
+											</li>
+											<li class="wrap d_flex active">
+												<a href="task_manage.html" class="nav-link wrap">
+													<div class="icon">
+														<img class="icon-main" src="./assets/img/icon/ICON_nhiem-vu-active.svg">
+														<img class="icon-hover" src="./assets/img/icon/ICON_nhiem-vu.svg">
+													</div>
+													<div class="text">Quản lý nhiệm </div>
+													<span class="shape1"></span>
+													<span class="shape2"></span>
+												</a>
+											</li>
+											<li class="wrap d_flex">
+												<a href="#" class="nav-link wrap">
+													<div class="icon">
+														<img class="icon-main" src="./assets/img/icon/ICON_user-m.svg">
+														<img class="icon-hover" src="./assets/img/icon/ICON_user.svg">
+													</div>
+													<div class="text">Tài khoản</div>
+													<span class="shape1"></span>
+													<span class="shape2"></span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<aside class="right-col">
+						<div class="wrap d_flex right-col__content">
+							<!-- top navigation -->
+							<div class="wrap d_flex nav-top box-shadow">
+								<div class="wrap d_flex nav-top__content">
+									<div class="menu-toggle" data-toggle_sitebar="0">
+										<div class="toggle">
+											<img src="./assets/img/icon/ICON_menu-pc.svg">
+										</div>
+									</div>
+									<div class="navbar-nav">
+										<div class="wrap d_flex navbar-nav__content">
+											<div class="form-search-navbar" data-search_navbar>
+												<form action="" method="" class="wrap f-sf-r">
+													<input type="text" name="keyword" placeholder="Tìm kiếm.." autocomplete="off">
+													<button type="submit"><img src="./assets/img/icon/ICON_search.svg"></button>
+												</form>
+											</div>
+											<div class="search circle" data-search_navbar_show="0">
+												<div class="icon">
+													<img src="./assets/img/icon/ICON_search.svg">
+												</div>
+											</div>
+											<div class="notification circle">
+												<div class="icon" data-notification_navbar="0">
+													<img src="./assets/img/icon/ICON_chuong.svg">
+												</div>
+												<div class="notification-number"><span>6</span></div>
+												<div class="notification-info">
+													<ul>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">5 giờ trước</p>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">20/08/2022</p>
+															</a>
+														</li>
+													</ul>
+													<div class="view-all">
+														<a href="#">Xem tất cả</a>
+													</div>
+												</div>
+											</div>
+											<div class="user">
+												<div class="user-avatar" data-user="0">
+													<img src="./assets/img/icon/ICON-11.svg">
+												</div>
+												<div class="user-action">
+													<ul class="wrap">
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-user-o" aria-hidden="true"></i> <span>Hồ sơ</span></a>
+														</li>
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Đăng xuất</span></a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- top navigation -->
+
+							<!-- Quản lý nhiệm vụ -->
+							<div class="wrap d_flex task-manage">
+								<div class="wrap task-manage__title">
+									<h1 class="name f-sf-r">Quản lý nhiệm vụ</h1>
+								</div>
+							</div>
+							<!-- Quản lý nhiệm vụ -->
+
+							<!-- page content -->
+							<div class="wrap d_flex page-content">
+								<div class="wrap page-content__form">
+									<div class="wrap d_flex page-content__form-title">
+										<div class="title-name">
+											<p>Thông tin khách hàng</p>
+										</div>
+										<div class="title-status">Thành viên bạc</div>
+										<div class="title-time">
+											<div class="title-time__icon">
+												<img src="./assets/img/icon/ICON_date.svg">
+											</div>
+											<div class="title-time__text f-sf-r"><p>20/08/2022</p></div>
+										</div>
+									</div>
+									<div class="wrap page-content__form-content">
+										<form action="" method="" class="wrap">
+											<div class="wrap d_flex form-top">
+												<div class="avatar">
+													<div class="wrap avatar-title">
+														<p>Hình đại diện</p>
+													</div>
+													<div class="wrap avatar-content">
+														<div class="avatar-preview">
+															<img src="./assets/img/icon/ICON-11.svg">
+														</div>
+														<div class="wrap avatar-action">
+															<div class="avatar-action__add">
+																<div class="choose-file">Chọn tệp
+																	<input type="file" name="file_avatar">
+																</div>
+																<div class="name-file"></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="form-input">
+													<div class="wrap d_flex form-group row">
+														<div class="col-md-6 p-right-5">
+															<label>Họ và Tên</label>
+															<input type="text" name="" class="form-control">
+														</div>
+														<div class="col-md-6 p-left-5 input-date">
+															<label>Ngày Sinh</label>
+															<input type="text" name="" class="form-control datepicker">
+															<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
+														</div>
+													</div>
+													<div class="wrap d_flex form-group row">
+														<div class="col-md-6 p-right-5">
+															<label>Số điện thoại</label>
+															<input type="text" name="" class="form-control">
+														</div>
+														<div class="col-md-6 p-left-5 input-select">
+															<label>Gói đăng kí</label>
+															<select class="form-select f-sf-r" aria-label="select">
+		  														<option selected>Workshop 3 ngày</option>
+		  														<option value="1">Gói 16.5</option>
+																<option value="2">Thành viên bạc</option>
+		  														<option value="3">Thành viên vàng</option>
+															</select>
+															<div class="icon-down"><img src="./assets/img/icon/down-arrow.svg"></div>
+														</div>
+													</div>
+													<div class="wrap d_flex form-group row">
+														<label>Địa chỉ</label>
+														<input type="text" name="" class="form-control">
+													</div>
+												</div>
+											</div>
+											<div class="wrap d_flex form-group row">
+												<div class="wrap form-group__title">
+													<p>Ghi chú</p>
+												</div>
+												<div class="wrap form-group__content">
+													<label>Thành viên bạc</label>
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+											<div class="wrap d_flex form-group row">
+												<div class="wrap form-group__content">
+													<label>Gói 16.5</label>
+													<div class="bg-blue div-note">
+														<p>Utilize breakpoint-specific column classes for easy column sizing without an explicit Utilize breakpoint-specific column classes for easy column sizing without an explicit</p>
+													</div>
+												</div>
+											</div>
+											<div class="wrap d_flex form-group row">
+												<div class="wrap form-group__content">
+													<label>Admin ghi chú</label>
+													<div class="bg-yellow div-note">
+														<p>Utilize breakpoint-specific column classes for easy column sizing without an explicit Utilize breakpoint-specific column classes for easy column sizing without an explicit</p>
+													</div>
+												</div>
+											</div>
+											<div class="wrap d_flex form-group row">
+												<button class="save-form">Lưu lại</button>
+											</div>
+										</form>
+									</div>
+									<!-- Lich su thanh vien -->
+									<div class="wrap d_flex history-member">
+										<div class="wrap d_flex history-member__title">
+											<div class="icon">
+												<img src="./assets/img/icon/list.svg">
+											</div>
+											<div class="text">Lịch sử</div>
+										</div>
+										<div class="wrap history-member__content">
+											<ul class="wrap">
+												<li class="wrap green">
+													<div class="li-title">Goi Workshop 3 ngay</div>
+													<div class="li-date f-sf-r">20/08/2022</div>
+												</li>
+												<li class="wrap violet">
+													<div class="li-title">Goi Workshop 3 ngay</div>
+													<div class="li-date f-sf-r">20/08/2022</div>
+												</li>
+												<li class="wrap yellow">
+													<div class="li-title">Goi Workshop 3 ngay</div>
+													<div class="li-date f-sf-r">20/08/2022</div>
+												</li>
+												<li class="wrap red">
+													<div class="li-title">Goi Workshop 3 ngay</div>
+													<div class="li-date f-sf-r">20/08/2022</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- page content -->
+						</div>
+					</aside>
+				</div>
+			</div>
+		</section>
+		<!-- Mobile -->
+		<section class="wrap d_flex site-content mobile">
+			<div class="containers">
+				<div class="wrap d_flex head-mobile" style="background: url('./assets/img/icon/ICON-32.svg');">
+					<header class="wrap d_flex header-m">
+						<div class="nav-menu" data-menu_m="0">
+							<div class="toggle">
+								<img src="./assets/img/icon/ICON_menu-m.svg">
+							</div>
+						</div>
+						<div class="nav-user">
+							<div class="nav-user__avatar">
+								<div class="avatar">
+									<img src="./assets/img/icon/ICON-11.svg">
+								</div>
+							</div>
+						</div>
+					</header>
+					<div class="wrap d_flex title-page-m">
+						<div class="wrap title-page-m__content">
+							<div class="title-large">Xin chào Nguyễn An !</div>
+							<div class="title-small f-sf-r">Bảng quản trị website</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrap d_flex content-page-m">
+					<div class="wrap content-page-m__content">
+						<div class="wrap d_flex tab-member-m">
+							<div class="wrap d_flex tab-member-m__title f-sf-r">
+								<p>Thêm nhiệm vụ</p>
+							</div>
+							<div class="wrap d_flex tab-member-m__content">
+								<div class="wrap tab-member-m__content-list">
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-1.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-1.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Workshop 3 ngày</div>
+												<div class="info-number f-sf-r">2,500</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-2.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-2.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Gói 16.5</div>
+												<div class="info-number f-sf-r">1.500</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-3.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-3.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Thành viên bạc</div>
+												<div class="info-number f-sf-r">2.500</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-1.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-1.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Thành viên vàng</div>
+												<div class="info-number f-sf-r">2,500</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-2.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-2.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Đại lý cấp 1</div>
+												<div class="info-number f-sf-r">1,500</div>
+											</div>
+										</div>
+										
+									</div>
+									<div class="item-tab-member-m">
+										<div class="image">
+											<img src="./assets/img/icon/ICON_bg-3.svg" alt="" />
+											<div class="icon">
+												<img src="./assets/img/icon/ICON_chart-3.svg">
+											</div>
+											<div class="info">
+												<div class="info-text">Đại lý cấp 2</div>
+												<div class="info-number f-sf-r">1.200</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- page content -->
+						<div class="wrap d_flex page-content">
+							<div class="wrap page-content__form">
+								<div class="wrap d_flex page-content__form-title">
+									<div class="title-name">
+										<p>Thông tin khách hàng</p>
+									</div>
+									<div class="title-time">
+										<div class="title-time__icon">
+											<img src="./assets/img/icon/ICON_date.svg">
+										</div>
+										<div class="title-time__text f-sf-r"><p>20/08/2022</p></div>
+									</div>
+								</div>
+								<div class="wrap page-content__form-content">
+									<form action="" method="" class="wrap">
+										<div class="wrap d_flex form-group row">
+											<div class="col-md-6 p-right-5">
+												<label>Họ và Tên</label>
+												<input type="text" name="" class="form-control">
+											</div>
+											<div class="col-md-6 p-left-5 input-date">
+												<label>Ngày Sinh</label>
+												<input type="text" name="" class="form-control datepicker">
+												<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
+											</div>
+										</div>
+										<div class="wrap d_flex form-group row">
+											<div class="col-md-6 p-right-5">
+												<label>Số điện thoại</label>
+												<input type="text" name="" class="form-control">
+											</div>
+											<div class="col-md-6 p-left-5 input-select">
+												<label>Gói đăng kí</label>
+												<select class="form-select f-sf-r" aria-label="select">
+														<option selected>Workshop 3 ngày</option>
+														<option value="1">Gói 16.5</option>
+													<option value="2">Thành viên bạc</option>
+														<option value="3">Thành viên vàng</option>
+												</select>
+												<div class="icon-down"><img src="./assets/img/icon/down-arrow.svg"></div>
+											</div>
+										</div>
+										<div class="wrap d_flex form-group row">
+											<div class="wrap form-group__title">
+												<p>Ghi chú</p>
+											</div>
+											<div class="wrap form-group__content">
+												<label>Thành viên bạc</label>
+												<textarea class="form-control"></textarea>
+											</div>
+										</div>
+										<div class="wrap d_flex form-group row">
+											<div class="wrap form-group__content">
+												<label>Gói 16.5</label>
+												<div class="bg-blue div-note">
+													<p>Utilize breakpoint-specific column classes for easy column sizing without an explicit Utilize breakpoint-specific column classes for easy column sizing without an explicit</p>
+												</div>
+											</div>
+										</div>
+										<div class="wrap d_flex form-group row">
+											<div class="wrap form-group__content">
+												<label>Admin ghi chú</label>
+												<div class="bg-yellow div-note">
+													<p>Utilize breakpoint-specific column classes for easy column sizing without an explicit Utilize breakpoint-specific column classes for easy column sizing without an explicit</p>
+												</div>
+											</div>
+										</div>
+										<div class="wrap d_flex form-group row">
+											<button class="save-form">Lưu lại</button>
+										</div>
+									</form>
+								</div>
+								<!-- Lich su thanh vien -->
+								<div class="wrap d_flex history-member">
+									<div class="wrap d_flex history-member__title">
+										<div class="icon">
+											<img src="./assets/img/icon/list.svg">
+										</div>
+										<div class="text">Lịch sử</div>
+									</div>
+									<div class="wrap history-member__content">
+										<ul class="wrap">
+											<li class="wrap green">
+												<div class="li-title">Goi Workshop 3 ngay</div>
+												<div class="li-date f-sf-r">20/08/2022</div>
+											</li>
+											<li class="wrap violet">
+												<div class="li-title">Goi Workshop 3 ngay</div>
+												<div class="li-date f-sf-r">20/08/2022</div>
+											</li>
+											<li class="wrap yellow">
+												<div class="li-title">Goi Workshop 3 ngay</div>
+												<div class="li-date f-sf-r">20/08/2022</div>
+											</li>
+											<li class="wrap red">
+												<div class="li-title">Goi Workshop 3 ngay</div>
+												<div class="li-date f-sf-r">20/08/2022</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- page content -->
+					</div>
+				</div>
+				<footer class="wrap d_flex footer-m">
+					<div class="wrap d_flex footer-m__content">
+						<div class="item-footer-m">
+							<a href="task_manage.html">
+								<div class="item-footer-m__img">
+									<div class="img">
+										<img src="./assets/img/icon/ICON_nhiem-vu-active.svg">
+									</div>
+								</div>
+								<div class="item-footer-m__info">
+									<p>Nhiệm vụ</p>
+								</div>
+							</a>
+						</div>
+						<div class="item-footer-m active">
+							<a href="dashboard.html">
+								<div class="item-footer-m__img">
+									<div class="img">
+										<img src="./assets/img/icon/ICON_home-27.svg">
+									</div>
+								</div>
+								<div class="item-footer-m__info">
+									<p>Home</p>
+								</div>
+							</a>
+						</div>
+						<div class="item-footer-m">
+							<a href="#">
+								<div class="item-footer-m__img">
+									<div class="img">
+										<img src="./assets/img/icon/ICON_user-m.svg">
+									</div>
+								</div>
+								<div class="item-footer-m__info">
+									<p>Tài khoản</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</section>
+
+		<!-- Popup menu mobile -->
+		<div class="nav-menu-m">
+			<div class="wrap nav-menu-m__content">
+				<div class="wrap menu-m-head">
+					<div class="wrap menu-m-head__main">
+						<p class="full-title">Womex</p>
+					</div>
+					<div class="wrap menu-m-head__sub">
+						<ul class="wrap d_flex">
+							<li>
+								<a href="#">Wordlwide</a>
+							</li>
+							<li>
+								<a href="#">Music</a>
+							</li>
+							<li>
+								<a href="#">Expro</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="wrap menu-m-body">
+					<div class="menu_section">
+						<ul class="wrap nav side-menu">
+							<li class="wrap d_flex">
+								<a href="dashboard.html" class="nav-link wrap">
+									<div class="icon">
+										<img class="icon-main" src="./assets/img/icon/ICON_home-active.svg">
+										<img class="icon-hover" src="./assets/img/icon/ICON_home-01.svg">
+									</div>
+									<div class="text">Dashboard</div>
+									<span class="shape1"></span>
+									<span class="shape2"></span>
+								</a>
+							</li>
+							<li class="wrap d_flex active">
+								<a href="task_manage.html" class="nav-link wrap">
+									<div class="icon">
+										<img class="icon-main" src="./assets/img/icon/ICON_nhiem-vu-active.svg">
+										<img class="icon-hover" src="./assets/img/icon/ICON_nhiem-vu.svg">
+									</div>
+									<div class="text">Quản lý nhiệm </div>
+									<span class="shape1"></span>
+									<span class="shape2"></span>
+								</a>
+							</li>
+							<li class="wrap d_flex">
+								<a href="#" class="nav-link wrap">
+									<div class="icon">
+										<img class="icon-main" src="./assets/img/icon/ICON_user-m.svg">
+										<img class="icon-hover" src="./assets/img/icon/ICON_user.svg">
+									</div>
+									<div class="text">Tài khoản</div>
+									<span class="shape1"></span>
+									<span class="shape2"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="wrap nav-menu-m__close" data-close_menu_m>
+				<div class="close-menu-m">
+					<div class="icon"><img src="./assets/img/icon/ICON_clost.svg"></div>
+				</div>
+			</div>
+		</div>
+		<!-- script -->
+		<script src="./assets/libs/jquery.min.js"></script>
+		<script src="./assets/libs/bootstrap.min.js"></script>
+		<script src="./assets/libs/jquery.datetimepicker.full.min.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

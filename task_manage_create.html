@@ -61,7 +61,7 @@
 												</a>
 											</li>
 											<li class="wrap d_flex">
-												<a href="#" class="nav-link wrap">
+												<a href="user.html" class="nav-link wrap">
 													<div class="icon">
 														<img class="icon-main" src="./assets/img/icon/ICON_user-m.svg">
 														<img class="icon-hover" src="./assets/img/icon/ICON_user.svg">
@@ -80,7 +80,7 @@
 					<aside class="right-col">
 						<div class="wrap d_flex right-col__content">
 							<!-- top navigation -->
-							<div class="wrap d_flex nav-top">
+							<div class="wrap d_flex nav-top box-shadow">
 								<div class="wrap d_flex nav-top__content">
 									<div class="menu-toggle" data-toggle_sitebar="0">
 										<div class="toggle">
@@ -89,15 +89,55 @@
 									</div>
 									<div class="navbar-nav">
 										<div class="wrap d_flex navbar-nav__content">
-											<div class="search">
-												<img src="./assets/img/icon/ICON_search.svg">
+											<div class="form-search-navbar" data-search_navbar>
+												<form action="" method="" class="wrap f-sf-r">
+													<input type="text" name="keyword" placeholder="Tìm kiếm.." autocomplete="off">
+													<button type="submit"><img src="./assets/img/icon/ICON_search.svg"></button>
+												</form>
 											</div>
-											<div class="notification">
-												<img src="./assets/img/icon/ICON_chuong.svg">
+											<div class="search circle" data-search_navbar_show="0">
+												<div class="icon">
+													<img src="./assets/img/icon/ICON_search.svg">
+												</div>
+											</div>
+											<div class="notification circle">
+												<div class="icon" data-notification_navbar="0">
+													<img src="./assets/img/icon/ICON_chuong.svg">
+												</div>
+												<div class="notification-number"><span>6</span></div>
+												<div class="notification-info">
+													<ul>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">5 giờ trước</p>
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<p>Congratulate <strong>Olivia James</strong> for New template start</p>
+																<p class="date">20/08/2022</p>
+															</a>
+														</li>
+													</ul>
+													<div class="view-all">
+														<a href="#">Xem tất cả</a>
+													</div>
+												</div>
 											</div>
 											<div class="user">
-												<div class="user-avatar">
+												<div class="user-avatar" data-user="0">
 													<img src="./assets/img/icon/ICON-11.svg">
+												</div>
+												<div class="user-action">
+													<ul class="wrap">
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-user-o" aria-hidden="true"></i> <span>Hồ sơ</span></a>
+														</li>
+														<li class="f-sf-r">
+															<a href="javascript:;"><i class="fa fa-sign-out" aria-hidden="true"></i> <span>Đăng xuất</span></a>
+														</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -121,6 +161,7 @@
 										<div class="title-name">
 											<p>Thông tin khách hàng</p>
 										</div>
+										<div class="title-status">Thành viên bạc</div>
 										<div class="title-time">
 											<div class="title-time__icon">
 												<img src="./assets/img/icon/ICON_date.svg">
@@ -130,31 +171,57 @@
 									</div>
 									<div class="wrap page-content__form-content">
 										<form action="" method="" class="wrap">
-											<div class="wrap d_flex form-group row">
-												<div class="col-md-6 p-right-5">
-													<label>Họ và Tên</label>
-													<input type="text" name="" class="form-control">
+											<div class="wrap d_flex form-top">
+												<div class="avatar">
+													<div class="wrap avatar-title">
+														<p>Hình đại diện</p>
+													</div>
+													<div class="wrap avatar-content">
+														<div class="avatar-preview">
+															<img src="./assets/img/icon/ICON-11.svg">
+														</div>
+														<div class="wrap avatar-action">
+															<div class="avatar-action__add">
+																<div class="choose-file">Chọn tệp
+																	<input type="file" name="file_avatar">
+																</div>
+																<div class="name-file"></div>
+															</div>
+														</div>
+													</div>
 												</div>
-												<div class="col-md-6 p-left-5 input-date">
-													<label>Ngày Sinh</label>
-													<input type="text" name="" class="form-control datepicker">
-													<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
-												</div>
-											</div>
-											<div class="wrap d_flex form-group row">
-												<div class="col-md-6 p-right-5">
-													<label>Số điện thoại</label>
-													<input type="text" name="" class="form-control">
-												</div>
-												<div class="col-md-6 p-left-5 input-select">
-													<label>Gói đăng kí</label>
-													<select class="form-select f-sf-r" aria-label="select">
-  														<option selected>Workshop 3 ngày</option>
-  														<option value="1">Gói 16.5</option>
-														<option value="2">Thành viên bạc</option>
-  														<option value="3">Thành viên vàng</option>
-													</select>
-													<div class="icon-down"><img src="./assets/img/icon/down-arrow.svg"></div>
+												<div class="form-input">
+													<div class="wrap d_flex form-group row">
+														<div class="col-md-6 p-right-5">
+															<label>Họ và Tên</label>
+															<input type="text" name="" class="form-control">
+														</div>
+														<div class="col-md-6 p-left-5 input-date">
+															<label>Ngày Sinh</label>
+															<input type="text" name="" class="form-control datepicker">
+															<div class="icon-date"><img src="./assets/img/icon/ICON_date.svg"></div>
+														</div>
+													</div>
+													<div class="wrap d_flex form-group row">
+														<div class="col-md-6 p-right-5">
+															<label>Số điện thoại</label>
+															<input type="text" name="" class="form-control">
+														</div>
+														<div class="col-md-6 p-left-5 input-select">
+															<label>Gói đăng kí</label>
+															<select class="form-select f-sf-r" aria-label="select">
+		  														<option selected>Workshop 3 ngày</option>
+		  														<option value="1">Gói 16.5</option>
+																<option value="2">Thành viên bạc</option>
+		  														<option value="3">Thành viên vàng</option>
+															</select>
+															<div class="icon-down"><img src="./assets/img/icon/down-arrow.svg"></div>
+														</div>
+													</div>
+													<div class="wrap d_flex form-group row">
+														<label>Địa chỉ</label>
+														<input type="text" name="" class="form-control">
+													</div>
 												</div>
 											</div>
 											<div class="wrap d_flex form-group row">
