@@ -339,7 +339,7 @@
 						min-height: 119px;
 						float: left;
 						margin-right: 20px;
-						border-radius: 10px;
+						border-radius: 20px;
 						overflow: hidden;
 						position: relative;
 						cursor: pointer;
@@ -520,6 +520,44 @@
 									color: #fff;
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1279px) {
+	.content-site {
+		.left-col {
+			width: 210px;
+		}
+		.right-col {
+			width: calc(100% - 210px - 32px);
+			&__content {
+				.tab-member {
+					float: left;
+				    clear: both;
+				    overflow: auto;
+					&__content {
+						overflow-x: auto;
+					    overflow-y: hidden;
+					    white-space: nowrap;
+					    text-align: center;
+					    padding-bottom: 5px;
+						.item-tab-member {
+	    					width: 25%;
+						    display: inline-block;
+						    float: unset;
+						}
+					}
+				}
+				.p-content {
+					.p_table {
+						overflow-x: auto;
+						table {
+							width: 100%;
+							overflow: auto;
 						}
 					}
 				}
