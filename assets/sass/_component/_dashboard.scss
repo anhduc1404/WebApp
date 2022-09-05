@@ -342,6 +342,7 @@
 						border-radius: 10px;
 						overflow: hidden;
 						position: relative;
+						cursor: pointer;
 						&:nth-child(6n+6) {
 							margin-right: unset;
 						}
@@ -408,6 +409,10 @@
 								th {
 									font-weight: 500;
 									padding: 10px;
+									text-transform: uppercase;
+									&.status {
+										text-align: center;
+									}
 								}
 							}
 						}
