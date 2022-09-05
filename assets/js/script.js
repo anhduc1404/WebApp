@@ -99,3 +99,23 @@ $('body').on('click','*[data-search_navbar_show]',function(e){
         $(this).attr('data-search_navbar_show',0);
     }
 });
+//Chuyển tab trang tài khoản (user)
+$('body').on('click','*[data-tab_user]',function(e){
+    var data = $(this).attr('data-tab_user');
+    $(this).closest('.page-user').each(function(){
+        $('.item-tab-user').removeClass('active');
+    });
+    $(this).closest('.page-user').each(function(){
+        $('.tab-li').removeClass('active');
+    });
+    if(data == 'account') {
+        $(this).closest('.page-user').find('.tab-'+data).addClass('active');
+        $(this).addClass('active');
+    }else if(data == 'changepass') {
+        $(this).closest('.page-user').find('.tab-'+data).addClass('active');
+        $(this).addClass('active');
+    }else if(data == 'task') {
+        $(this).closest('.page-user').find('.tab-'+data).addClass('active');
+        $(this).addClass('active');
+    }
+});

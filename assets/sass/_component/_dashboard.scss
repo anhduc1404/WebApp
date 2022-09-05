@@ -665,6 +665,9 @@
 									&:last-child {
 										border-radius: 0 10px 10px 0;
 									}
+									.icon-status {
+										width: 100%;
+									}
 									.avatar {
 										width: 50px;
 										height: 50px;
@@ -735,44 +738,6 @@
 				}
 				.paginate-list {
 					margin-top: 20px;
-					ul {
-						width: 100%;
-						display: flex;
-						flex-wrap: wrap;
-						justify-content: center;
-						li {
-							display: inline-block;
-							width: 45px;
-							height: 42px;
-							border: 1px solid #7e4dfe;
-							position: relative;
-							margin-left: 10px;
-							overflow: hidden;
-							background: #fff;
-							border-radius: 10px;
-							cursor: pointer;
-							transition: all 0.3s;
-							a {
-								position: absolute;
-								top: 50%;
-								left: 50%;
-								transform: translate(-50%,-50%);
-								transition: all 0.3s;
-							}
-							&.active {
-								background: linear-gradient(to right,#7e4dfe, #5d6ee9);
-								a {
-									color: #fff;
-								}
-							}
-							&:hover {
-								background: linear-gradient(to right,#7e4dfe, #5d6ee9);
-								a {
-									color: #fff;
-								}
-							}
-						}
-					}
 				}
 			}
 		}

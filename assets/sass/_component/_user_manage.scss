@@ -1,0 +1,212 @@
+.page-user {
+	.form-user {
+		padding: 20px;
+		background: #fff;
+		border-radius: 20px;
+		&__tab {
+			margin-bottom: 30px;
+			border-bottom: 1px solid #ebebeb;
+			ul {
+				li {
+					display: inline-block;
+					position: relative;
+					padding: 15px 20px;
+					cursor: pointer;
+					transition: all 0.3s;
+					font-size: 18px;
+					&:after {
+						content: "";
+						width: 0;
+						height: 2px;
+						background: $color_main;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						opacity: 0;
+						transition: all 0.3s;
+					}
+					&.active {
+						&:after {
+							width: 100%;
+							opacity: 1;
+						}
+					}
+					&:hover {
+						color: $color_main;
+						&:after {
+							width: 100%;
+							opacity: 1;
+						}
+					}
+					&:first-child {
+						padding-left: 10px;
+					}
+				}
+			}
+		}
+		.form-user-information {
+			display: none;
+			opacity: 0;
+			&.active {
+				display: block;
+				opacity: 1;
+			}
+		}
+		&__content {
+			.avatar {
+				width: 30%;
+				float: left;
+				&-content {
+					border: 1px solid #ebebeb;
+					border-radius: 20px;
+					overflow: hidden;
+					padding: 20px;
+					.avatar-preview {
+						width: 60%;
+					    margin: 0 auto;
+					    img {
+					    	width: 100%;
+					    	height: 100%;
+					    }
+					}
+					.avatar-action {
+						margin-top: 5px;
+						&__add {
+							border: 1px solid #ebebeb;
+							width: 150px;
+							margin: 0 auto;
+							display: flex;
+							flex-wrap: wrap;
+							border-radius: 8px;
+							overflow: hidden;
+							.choose-file {
+								background: #efeff2;
+								width: 50%;
+								float: left;
+								padding: 8px 0;
+								text-align: center;
+								border-right: 1px solid #ebebeb;
+								cursor: pointer;
+								position: relative;
+								input {
+									width: 100%;
+									height: 100%;
+									position: absolute;
+									top: 0;
+									left: 0;
+									opacity: 0;
+									cursor: pointer;
+								}
+							}
+							.name-file {
+								width: 50%;
+								float: left;
+								background: #fff;
+							}
+						}
+					}
+				}
+			}
+			.form-input {
+				width: calc(100% - 30% - 30px);
+				float: right;
+				margin-left: 30px;
+				border: 1px solid #ebebeb;
+				border-radius: 20px;
+				padding: 20px;
+				.form-user-title {
+					p {
+						font-size: 18px;
+						margin-bottom: unset;
+					}
+				}
+				.form-group {
+					&:first-child {
+						margin-top: 0!important;
+					}
+					.btn-submit {
+
+					}
+				}
+			}
+		}
+		// Change pass
+		.form-user-changepass {
+			display: none;
+			opacity: 0;
+			&.active {
+				display: block;
+				opacity: 1;
+			}
+			.change-pass {
+				width: 350px;
+				background: #fff;
+				padding: 20px;
+				border-radius: 20px;
+				border: 1px solid #ebebeb;
+				&__content {
+					.form-group {
+						input {
+							padding: 0 10px;
+						}
+					}
+				}
+			}
+		}
+		//list task
+		.form-user-task {
+			display: none;
+			opacity: 0;
+			&.active {
+				display: block;
+				opacity: 1;
+			}
+			.list-task {
+				&__table {
+					background: #f0efff;
+					padding: 20px;
+					border-radius: 20px;
+					table {
+						width: 100%;
+						thead {
+							width: 100%;
+							tr {
+								th {
+									text-transform: uppercase;
+									padding: 10px 5px;
+								}
+							}
+						}
+						tbody {
+							tr {
+								td {
+									padding: 10px;
+									&:first-child {
+										border-radius: 10px 0 0 10px;
+									}
+									&:last-child {
+										border-radius: 0 10px 10px 0;
+									}
+									.avatar {
+										width: 50px;
+										height: 50px;
+										overflow: hidden;
+										img {
+											width: 100%;
+											height: 100%;
+											margin-left: 0;
+											object-fit: contain;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				&__paginate {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}

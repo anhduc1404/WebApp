@@ -34,6 +34,7 @@
 	}
     input,select {
         height: 45px;
+        border-radius: 7px;
     }
 	textarea {
 		height: 100px;
@@ -41,7 +42,7 @@
 		font-size: 13px;
 	}
 	.save-form {
-		background: linear-gradient(#7e4dfe, #5d6ee9);
+		background: linear-gradient(to right,#7e4dfe, #5d6ee9);
 		padding: 10px 35px;
 		border-radius: 8px;
 		overflow: hidden;
@@ -50,7 +51,7 @@
 		border: none;
 		transition: all 0.3s;
 		&:hover {
-			background: linear-gradient(#5d6ee9,#7e4dfe);
+			background: linear-gradient(to right,#5d6ee9,#7e4dfe);
 		}
 	}
 }
@@ -139,7 +140,7 @@
         		}
         		.icon-date {
         			position: absolute;
-        			bottom: 12px;
+        			bottom: 15px;
         			right: 16px;
         			width: 15px;
         			overflow: hidden;

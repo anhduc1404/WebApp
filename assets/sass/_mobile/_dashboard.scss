@@ -190,6 +190,9 @@
 											width: 120px;
 										}
 									}
+									&.status {
+										text-align: center;
+									}
 								}
 							}
 						}
@@ -202,6 +205,9 @@
 									}
 									&:last-child {
 										border-radius: 0 10px 10px 0;
+									}
+									.icon-status {
+										width: 62px;
 									}
 									.avatar {
 										width: 50px;
