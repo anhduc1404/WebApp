@@ -121,9 +121,20 @@ $('body').on('click','*[data-tab_user]',function(e){
 });
 $(document).ready(function(){
     $('.p-table-m__content').scroll(function(event){
-        var l = $('.action-fix').scrollLeft();
-        var st = $('.p-table-m__content').scrollLeft();
+        var l = $(window).width() + 120;
+        var sl = $('.p-table-m__content').scrollLeft();
         console.log(l);
-        console.log(st);
+        console.log(sl);
+        if(sl > l) {
+            $('.action-fix').css({'display':'none'});
+        }else if(l >= 768){
+            if(sl > 125) {
+                $('.action-fix').css({'display':'none'});
+            }else {
+                $('.action-fix').css({'display':'block'});
+            }
+        }else {
+            $('.action-fix').css({'display':'block'});
+        }
     });
 });
