@@ -119,3 +119,11 @@ $('body').on('click','*[data-tab_user]',function(e){
         $(this).addClass('active');
     }
 });
+$(document).ready(function(){
+    $('.p-table-m__content').scroll(function(event){
+        var l = $('.action-fix').scrollLeft();
+        var st = $('.p-table-m__content').scrollLeft();
+        console.log(l);
+        console.log(st);
+    });
+});
