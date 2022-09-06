@@ -32,10 +32,10 @@ jQuery(document).ready(function ($) {
         $.datetimepicker.setLocale('vi');
         $('.datepicker').datetimepicker({
             timepicker:false,
-            format:'Y-m-d'
+            format:'d-m-Y'
         });
         $('.datetimepicker').datetimepicker({
-            format:'Y-m-d H:i:s',
+            format:'d-m-Y H:i:s',
             defaultTime:'00:00:00',
             formatTime:'H:i:s'
         });
