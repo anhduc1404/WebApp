@@ -133,6 +133,12 @@ $(document).ready(function(){
             }else {
                 $('.action-fix').css({'display':'block'});
             }
+        }else if(l >= 528){
+            if(sl > 350) {
+                $('.action-fix').css({'display':'none'});
+            }else {
+                $('.action-fix').css({'display':'block'});
+            }
         }else {
             $('.action-fix').css({'display':'block'});
         }
