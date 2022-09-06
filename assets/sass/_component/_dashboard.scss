@@ -532,7 +532,20 @@
 					img {
 						width: 100%;
 						height: 100%;
-						// object-fit: contain;
+						object-fit: cover;
+					}
+					.image-floating {
+						position: absolute;
+						top: 0;
+						right: 0;
+						z-index: 999;
+						width: 541px;
+						height: 100%;
+						img {
+							object-fit: contain;
+							width: 100%;
+							height: 100%;
+						}
 					}
 					&-text {
 						position: absolute;
