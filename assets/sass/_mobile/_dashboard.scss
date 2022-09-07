@@ -455,7 +455,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		border-radius: 16px;
-
+		z-index: 999999;
 		&__content {
 			.item-footer-m {
 				width: calc(100%/3);
