@@ -1,6 +1,6 @@
 @media only screen and (min-width:0px) and (max-width:991px) {
 	body {
-		background: #fff;
+		background: #fafcfe;
 	}
 	.containers {width: 100%;}
 	.desktop {
@@ -448,15 +448,18 @@
 		}
 	}
 	.footer-m {
-		background: $color_main;
-		width: calc(100% - 20px);
+		width: 100%;
 		position: fixed;
-		bottom: 10px;
+		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		border-radius: 16px;
 		z-index: 999999;
+		padding: 10px;
+		// background: yellow;
 		&__content {
+			background: $color_main;
+			width: calc(100% - 20px);
+			border-radius: 16px;
 			.item-footer-m {
 				width: calc(100%/3);
 				float: left;

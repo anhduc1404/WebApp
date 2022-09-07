@@ -19,7 +19,7 @@
 	}
 	.page-content {
 		&__form {
-			background: unset;
+			// background: unset;
 			&-title {
 				.title-status {
 					position: relative;
@@ -105,7 +105,7 @@
 	//Them moi
 	.page-content {
 		&__form {
-			padding: unset;
+			padding: 10px;
 			&-content {
 				.avatar {
 					&-title {
