@@ -455,10 +455,11 @@
 		transform: translateX(-50%);
 		z-index: 999999;
 		padding: 10px;
-		// background: yellow;
+		width: calc(100% - 20px);
+		background: #fafcfe;
 		&__content {
 			background: $color_main;
-			width: calc(100% - 20px);
+			width: 100%;
 			border-radius: 16px;
 			.item-footer-m {
 				width: calc(100%/3);
